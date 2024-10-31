@@ -7,15 +7,15 @@ def process_image(image_path, model_path):
     model = YOLO(model_path)
     image = cv2.imread(image_path)
 
-    # Verifica si la imagen se cargó correctamente
+   
     if image is None:
         print("Error: No se pudo cargar la imagen.")
-        return []  # Devuelve una lista vacía si la imagen no se carga
+        return [] 
 
     results = model(image)
     detections = []
 
-    # Extrae información sobre cada detección
+    
     for result in results:
         for box in result.boxes:
             class_id = int(box.cls)  
