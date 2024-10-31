@@ -1,13 +1,13 @@
 import sys
-sys.path.append(r'C:/Users/carlo/Downloads/Lentes/IA/General_analyze_each')
+sys.path.append(r'path')
 
 from analyze_image import process_image 
 from test_image import process_image_2
 from analyze_video import process_video
 from voz import read_text, initialize_engine, speak
 
-image_path = r"C:/Users/carlo/Downloads/Lentes/IA/imagenes_prueba/test_1.jpg"
-video_path = r"C:/Users/carlo/Downloads/Lentes/IA/imagenes_prueba/video_1.mp4"
+image_path = r"pathh_image"
+video_path = r"path_video"
 
 model_path = 'yolov8s.pt'
 
